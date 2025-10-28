@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 // ⚠️ Захардкоженные значения (как ты просил)
 const AUTH_SECRET = ""; // можешь оставить пустым
 const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1432791284015169537/BxjhjGU3JYNmXsn7gGikDb_mvIRMzlZIMe0-93KvEnDCb_yOeCHy0dykPBqt4XnCJPwq";
-const DISCORD_BOT_TOKEN  = "MTQzMjc4Njk3NDYyMzc5NzMzMA.GV1eK5.SGFkQ3qQVKUJtMVNlAUtKDuk0GP_XaXmsapfkc";
+const DISCORD_BOT_TOKEN  = "MTQzMjc4Njk3NDYyMzc5NzMzMA.GBmEHy.TbbNlj9juwmC60fwMYi7GEJQsnjJwyRT_7rTBs";
 const DISCORD_CHANNEL_ID = "1432784530653319290";
 
 const app = express();
@@ -64,4 +64,5 @@ app.get("/pull", async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Relay on :${PORT}`));
+
 
