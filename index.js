@@ -55,6 +55,7 @@ app.get("/pull", async (req, res) => {
     const msgs = await r.json();
     const items = msgs
       .filter(m => !since || BigInt(m.id) > BigInt(since))
+      .filter(m => m.content && m.content.trim().length > 0) // Filter out empty messages (images/videos without text)
       .map(m => ({ id: m.id, author: m.author?.username || "unknown", text: m.content || "", time: m.timestamp }))
       .reverse();
     res.json({ items });
@@ -64,6 +65,5 @@ app.get("/pull", async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Relay on :${PORT}`));
-
 
 
