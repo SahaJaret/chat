@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 // ⚠️ Захардкоженные ТЕСТОВЫЕ значения
 const AUTH_SECRET = ""; 
 const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1432791284015169537/BxjhjGU3JYNmXsn7gGikDb_mvIRMzlZIMe0-93KvEnDCb_yOeCHy0dykPBqt4XnCJPwq";
-const DISCORD_BOT_TOKEN = "MTQzMjc4Njk3NDYyMzc5NzMzMA.GRGOsP.TLuqkypGuEybnRYM9NdWRg93ANRiIh8_-mPguA";
+const DISCORD_BOT_TOKEN = "MTQzMjc4Njk3NDYyMzc5NzMzMA.GqFBZn.lgjvfGijR0dx7wFkKmeAFBvZff6UHQ--cL9Vd0";
 const DISCORD_CHANNEL_ID = "1432784530653319290";
 
 const app = express();
@@ -165,3 +165,4 @@ app.listen(PORT, () => {
   console.log(`   GET  /pull?since=0 - Fetch messages`);
   console.log(`   POST /send - Send message\n`);
 });
+
